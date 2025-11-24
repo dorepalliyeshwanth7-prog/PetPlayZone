@@ -1,0 +1,20 @@
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PetPlayZone • Book</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><h1>PetPlayZone</h1><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="bookings.html">Book</a></nav></header>
+<main>
+<h2>Book a Session</h2>
+<form action="thankyou.html" method="get">
+<label>Your name</label><input name="ownerName" required>
+<label>Phone</label><input name="phone" pattern="[0-9]{10}" required>
+<label>Pet Name</label><input name="petName" required>
+<label>Pet Type</label><select name="petType"><option>Dog</option><option>Cat</option><option>Other</option></select>
+<label>Service</label><input name="service" id="service" readonly>
+<label>Date</label><input type="date" name="date" required>
+<label>Time</label><input type="time" name="time" required>
+<button type="submit">Confirm</button>
+</form>
+</main>
+<footer>© PetPlayZone</footer>
+</body>
+</html>
